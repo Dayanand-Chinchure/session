@@ -1,0 +1,9 @@
+docker swarm init --advertise-addr <IP>
+docker info
+docker service create --name webserver -p 80:80 httpd
+
+docker service scale webserver=2
+
+docker service ps webserver
+
+

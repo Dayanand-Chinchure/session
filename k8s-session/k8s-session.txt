@@ -1,0 +1,18 @@
+Session details :
+
+Place for documentation : https://kubernetes.io/docs
+
+[0] Why k8s ? 
+[1] Where k8s ? (pks)
+[2] How k8s ? 
+[3] k8s internal structure 
+[4] k8s pod creation process
+[5] k8s networking details
+[6] k8s service discovery NodePort
+[7] k8s Prometheus deployement and SD
+[8] k8s config-map, secrets and deployement
+[9] Questions ?
+
+Thank You !
+
+

@@ -1,0 +1,17 @@
+Session details :
+
+Place for documentation : https://docs.docker.com
+
+[0] virtual env for OS ? 
+[1] why docker to save resources ? 
+[2] what was before docker ?
+[3] namespaces and container explore with details (runC)
+[4] docker commands
+[5] virtualbox and docker interface details eth0 -> docker0 -> eth0 container
+[6] docker images and volume details with layer information 
+[7] docker compose with example
+[8] docker swarm with example - setup required
+[9] Questions
+
+Thank You !
+

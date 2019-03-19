@@ -1,0 +1,25 @@
+#RAM Consumtion
+docker run -d --name restricted --memory 100m busybox
+docker run -d --name normal busybox
+docker stats --no-stream
+
+
+#For cpu-shares (0-768 100% - Amount of processing power consumtion)
+docker run -d --name c768 --cpuset-cpus 0 --cpu-shares 768 busybox
+docker run -d --name c256 --cpuset-cpus 0 --cpu-shares 256 busybox
+
+
+#Assigning host network
+docker run -it --net=host busybox ip addr show
+
+
+#Using PID Namespace 
+#Using the processes of the host namespaces
+docker run -it alpine ps aux
+docker run -it --pid=host alpine ps aux
+
+
+#Using differet namespace
+docker run -d --name http nginx:alpine
+docker run --net=container:http benhall/curl curl -s localhost
+docker run --pid=container:http alpine ps aux

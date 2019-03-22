@@ -23,3 +23,7 @@ docker run -it --pid=host alpine ps aux
 docker run -d --name http nginx:alpine
 docker run --net=container:http benhall/curl curl -s localhost
 docker run --pid=container:http alpine ps aux
+
+
+#Not allowing any system calls
+docker run -it --security-opt seccomp:chmod.json busybox chmod 400 /etc/hostname

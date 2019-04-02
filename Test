@@ -1,0 +1,19 @@
+1. What is devops ?
+
+2. Use of : 
+    [0] git fetch
+    [1] git pull, 
+    [2] git rebase
+    [3] git stash
+
+3. What is port forwarding ? Explain with example.
+
+4. Explain bridge network in docker ? Explain with network interface example.
+
+5. Ansible is Iaas ? [Yes/No] Why ?
+
+6. Explain CIDR with subnet 10.0.0.1/16 ? How many IPs I will get here to use ?
+
+7. Can CI/CD achieved using shell script ? Write road map to implement CI/CD with tools you know ?
+
+8. Explain docker isolation ?

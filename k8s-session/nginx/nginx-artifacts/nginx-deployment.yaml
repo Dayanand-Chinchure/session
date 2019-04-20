@@ -1,0 +1,28 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx     
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 1 
+  template: 
+    metadata:
+      labels:
+        app: nginx     
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+          - containerPort: 80        
+          volumeMounts:
+            - name: nginx-config
+              mountPath: /usr/share/nginx/html
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: mynginx

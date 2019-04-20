@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  index.html: |
+    Welcome to PUCSD !
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2019-04-20T06:15:35Z"
+  name: mynginx
+  namespace: default
+  resourceVersion: "221842"
+  selfLink: /api/v1/namespaces/default/configmaps/mynginx
+  uid: b5f2f873-6333-11e9-94d5-42010a8000c3

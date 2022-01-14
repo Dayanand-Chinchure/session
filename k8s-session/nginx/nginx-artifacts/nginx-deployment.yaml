@@ -2,6 +2,8 @@ apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: nginx
+  annotations:
+    configmap.reloader.stakater.com/reload: "mynginx"
   labels:
     app: nginx     
 spec:

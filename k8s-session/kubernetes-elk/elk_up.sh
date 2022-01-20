@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Initialize configuration's
-kubectl create configmap logstash-config --from-file=logstash/pipeline/logstash.conf
+kubectl create configmap logstash-config --from-file=logstash.conf
 
 # Start elastic search
 kubectl apply -f es-dep.yaml
